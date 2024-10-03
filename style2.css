@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body_container {
+    margin: 0px auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card1 {
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: 2px solid rgb(131, 125, 125);
+    min-height: 400px; /* Set minimum height to prevent overflow issues */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.card1:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+.content {
+    margin: 20px 10px; /* Single margin shorthand for uniformity */
+}
+
+.content p {
+    margin-top: 10px;
+}
+
+.img1 {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 192.66px;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+
+}
+
+.header p {
+    margin-top: 20px;
+    font-weight: 500;
+    color: rgb(110, 106, 106);
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 10px 0px 20px; /* Cleaned up margin shorthand */
+    margin-bottom: 25px;
+}
+
+.info {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.same1 {
+    display: flex;
+}
+
+.card_container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* Centering the cards */
+    max-width: 1300px; /* Optional: Prevent overflow */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card1 {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+}
+
+
+button{
+
+padding: 5px;
+border-radius: 15px;
+color: white;
+background-color: black;
+
+border: 2px solid black;
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+button:hover{
+
+transform: scale(1.20);
+color:white;
+background-color: rgb(7, 114, 229);
+
+}
